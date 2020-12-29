@@ -11,6 +11,7 @@ class home extends StatelessWidget {
             color: Colors.purple,
             width: 500.0,
             height: 900.0,
+
             // margin: EdgeInsets.all(15.0),
             // margin: EdgeInsets.only(left: 20.0),
 
@@ -65,6 +66,12 @@ class home extends StatelessWidget {
                     ),
                   ],
                 ),
+                Padding(
+                  padding:EdgeInsets.symmetric(horizontal:20.0),
+                  child:Container(
+                    height:2.0,
+                    width:500.0,
+                    color:Colors.white,),),
                 Row(
                   children: [
                     Expanded(
@@ -388,7 +395,7 @@ class home extends StatelessWidget {
                     )
                   ],
                 ),
-               //imageassests(),
+               imageassests(),
                 mybutton()
               ],
             )
@@ -396,11 +403,11 @@ class home extends StatelessWidget {
     );
   }
 }
-/*class imageassests extends StatelessWidget{
+class imageassests extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    AssetImage obj = AssetImage('images/cute.jpg');
-    Image image = Image(image: obj, width: 250.0,height: 250.0,);
+    AssetImage obj = AssetImage('images/flight.jpg');
+    Image image = Image(image: obj, width: 200.0,height: 100.0,);
     return Container(
       margin: EdgeInsets.only(top: 30.0),
       child: image,);
@@ -408,17 +415,17 @@ class home extends StatelessWidget {
 
   }
 
- */
-
  class mybutton extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 return Container(
+  width: 200.0,
+  height: 50.0,
   margin: EdgeInsets.only(top: 30.0),
   child: RaisedButton(
   color: Colors.deepOrange,
-  child: Text("Press here",
-  style: TextStyle(fontSize: 18.0,fontFamily: 'DancingScript',color: Colors.white),),
+  child: Text("Book Your Flight",
+  style: TextStyle(fontSize: 18.0,color: Colors.white),),
   elevation: 6.0,
   onPressed: (){
     buttonpressed(context);
@@ -427,7 +434,10 @@ return Container(
   }
 
   void buttonpressed(BuildContext context) {
-    var alertDialog= AlertDialog(title:Text("Button pressed"),content: Text("now enjoyy"),);
+    var alertDialog= AlertDialog(title:Text("Flight Booked Successfully"),content: Text("Now Enjoyy your journey!",  style: TextStyle(
+        fontSize: 20.0,
+        fontFamily: 'DancingScript',),),
+    );
     showDialog(context: context,
     builder: (BuildContext context){
       return alertDialog;

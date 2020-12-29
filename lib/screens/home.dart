@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class home extends StatelessWidget {
@@ -14,42 +15,64 @@ class home extends StatelessWidget {
             // margin: EdgeInsets.only(left: 20.0),
 
             child:Column(
+
               children: [
                 Row(
                   children: [
-                    Expanded(child: Text(
-                      "Priya",
+                    Expanded(child:Container(
+                     padding: EdgeInsets.only(bottom: 20.0),
+                      child: Text(
+                      "Flight Name",
                       textDirection: TextDirection.ltr,
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.white,
                           decoration: TextDecoration.none,
                           fontFamily: 'DancingScript-Bold',
-                        fontSize: 40.0,
-
+                        fontSize: 25.0,
+                      ),
                       ),
                     ),
                     ),
                     Expanded(
                       child: Text(
-                        "Protista",
+                        "Departure Time",
                         textDirection: TextDirection.ltr,
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             color: Colors.white,
                             decoration: TextDecoration.none,
                             fontFamily: 'DancingScript-Bold',
-                          fontSize: 40.0,
+                          fontSize: 25.0,
 
                         ),
                       ),
-                    )
+                    ),
+                    Expanded(child: Container(
+                     padding: EdgeInsets.only(bottom: 20.0),
+                      child:Text(
+                      "Destination",
+                      textDirection: TextDirection.ltr,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white,
+                        decoration: TextDecoration.none,
+                        fontFamily: 'DancingScript-Bold',
+                        fontSize: 25.0,
+                      ),
+                      ),
+                    ),
+                    ),
                   ],
                 ),
                 Row(
                   children: [
-                    Expanded(child: Text(
-                      "Data Science",
+                    Expanded(
+                      child: Container(
+                       padding: EdgeInsets.only(top: 10.0),
+
+                      child: Text(
+                      "VISTARA-095",
                       textDirection: TextDirection.ltr,
                       textAlign: TextAlign.center,
                       style: TextStyle(
@@ -57,13 +80,16 @@ class home extends StatelessWidget {
                           decoration: TextDecoration.none,
                           fontFamily: 'DancingScript-Bold',
                         fontSize: 20.0,
-
                       ),
                     ),
                     ),
+                    ),
                     Expanded(
-                      child: Text(
-                        "Development",
+                      child:Container(
+                       padding: EdgeInsets.only(top: 10.0),
+
+                       child: Text(
+                        "22:00",
                         textAlign: TextAlign.center,
                         textDirection: TextDirection.ltr,
                         style: TextStyle(
@@ -74,10 +100,295 @@ class home extends StatelessWidget {
 
                         ),
                       ),
+                    ),
+                    ),
+                    Expanded(
+                      child:Container(
+                        padding: EdgeInsets.only(top: 15.0),
+
+                         child: Text(
+                        "Kolkata",
+                        textAlign: TextAlign.center,
+                        textDirection: TextDirection.ltr,
+                        style: TextStyle(
+                          color: Colors.white,
+                          decoration: TextDecoration.none,
+                          fontFamily: 'DancingScript-Bold',
+                          fontSize: 20.0,
+
+                        ),
+                      ),
+                    ),
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Expanded(child: Container(
+                     padding: EdgeInsets.only(top: 15.0),
+                      child:Text(
+                      "INDIGO-495",
+                      textDirection: TextDirection.ltr,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white,
+                        decoration: TextDecoration.none,
+                        fontFamily: 'DancingScript-Bold',
+                        fontSize: 20.0,
+
+                      ),
+
+                    ),
+                    ),
+                    ),
+                    Expanded(
+                      child:Container(
+                      padding: EdgeInsets.only(top: 15.0),
+                      child: Text(
+                        "17:15",
+                        textAlign: TextAlign.center,
+                        textDirection: TextDirection.ltr,
+                        style: TextStyle(
+                          color: Colors.white,
+                          decoration: TextDecoration.none,
+                          fontFamily: 'DancingScript-Bold',
+                          fontSize: 20.0,
+
+                        ),
+                      ),
+                    ),
+                    ),
+                    Expanded(
+                      child: Container(
+                      padding: EdgeInsets.only(top: 15.0),
+                       child:Text(
+                        "Goa",
+                        textAlign: TextAlign.center,
+                        textDirection: TextDirection.ltr,
+                        style: TextStyle(
+                          color: Colors.white,
+                          decoration: TextDecoration.none,
+                          fontFamily: 'DancingScript-Bold',
+                          fontSize: 20.0,
+
+                        ),
+                      ),
+                    ),
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Expanded(child:Container(
+                       padding: EdgeInsets.only(top: 15.0),
+                        child:  Text(
+                      "AIRINDIA-422",
+                      textDirection: TextDirection.ltr,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white,
+                        decoration: TextDecoration.none,
+                        fontFamily: 'DancingScript-Bold',
+                        fontSize: 20.0,
+
+                      ),
+
+                    ),
+                    ),
+                    ),
+                    Expanded(
+                      child: Container(
+                    padding: EdgeInsets.only(top: 15.0),
+                      child:Text(
+                        "11:20",
+                        textAlign: TextAlign.center,
+                        textDirection: TextDirection.ltr,
+                        style: TextStyle(
+                          color: Colors.white,
+                          decoration: TextDecoration.none,
+                          fontFamily: 'DancingScript-Bold',
+                          fontSize: 20.0,
+                        ),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child:Container(
+                       padding: EdgeInsets.only(top: 15.0),
+                      child: Text(
+                        "Pune",
+                        textAlign: TextAlign.center,
+                        textDirection: TextDirection.ltr,
+                        style: TextStyle(
+                          color: Colors.white,
+                          decoration: TextDecoration.none,
+                          fontFamily: 'DancingScript-Bold',
+                          fontSize: 20.0,
+                        ),
+                        ),
+                      ),
                     )
                   ],
                 ),
-               imageassests(),
+                Row(
+                  children: [
+                    Expanded(child:Container(
+                      padding: EdgeInsets.only(top: 15.0),
+                      child:  Text(
+                        "VISTARA-387",
+                        textDirection: TextDirection.ltr,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.white,
+                          decoration: TextDecoration.none,
+                          fontFamily: 'DancingScript-Bold',
+                          fontSize: 20.0,
+
+                        ),
+
+                      ),
+                    ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        padding: EdgeInsets.only(top: 15.0),
+                        child:Text(
+                          "06:10",
+                          textAlign: TextAlign.center,
+                          textDirection: TextDirection.ltr,
+                          style: TextStyle(
+                            color: Colors.white,
+                            decoration: TextDecoration.none,
+                            fontFamily: 'DancingScript-Bold',
+                            fontSize: 20.0,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child:Container(
+                        padding: EdgeInsets.only(top: 15.0),
+                        child: Text(
+                          "Ahemdabad",
+                          textAlign: TextAlign.center,
+                          textDirection: TextDirection.ltr,
+                          style: TextStyle(
+                            color: Colors.white,
+                            decoration: TextDecoration.none,
+                            fontFamily: 'DancingScript-Bold',
+                            fontSize: 20.0,
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Expanded(child:Container(
+                      padding: EdgeInsets.only(top: 15.0),
+                      child:  Text(
+                        "AIRGO-912",
+                        textDirection: TextDirection.ltr,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.white,
+                          decoration: TextDecoration.none,
+                          fontFamily: 'DancingScript-Bold',
+                          fontSize: 20.0,
+
+                        ),
+
+                      ),
+                    ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        padding: EdgeInsets.only(top: 15.0),
+                        child:Text(
+                          "15:05",
+                          textAlign: TextAlign.center,
+                          textDirection: TextDirection.ltr,
+                          style: TextStyle(
+                            color: Colors.white,
+                            decoration: TextDecoration.none,
+                            fontFamily: 'DancingScript-Bold',
+                            fontSize: 20.0,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child:Container(
+                        padding: EdgeInsets.only(top: 15.0),
+                        child: Text(
+                          "Jaipur",
+                          textAlign: TextAlign.center,
+                          textDirection: TextDirection.ltr,
+                          style: TextStyle(
+                            color: Colors.white,
+                            decoration: TextDecoration.none,
+                            fontFamily: 'DancingScript-Bold',
+                            fontSize: 20.0,
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                      child:Container(
+                    padding: EdgeInsets.only(top: 15.0),
+                     child: Text(
+                      "JET-AIRWAYS 879",
+                      textDirection: TextDirection.ltr,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white,
+                        decoration: TextDecoration.none,
+                        fontFamily: 'DancingScript-Bold',
+                        fontSize: 20.0,
+
+                      ),
+                     ),
+                    ),
+
+                    ),
+                    Expanded(
+                      child: Container(
+                     padding: EdgeInsets.only(top: 15.0),
+                          child:Text(
+                        "18:55",
+                        textAlign: TextAlign.center,
+                        textDirection: TextDirection.ltr,
+                        style: TextStyle(
+                          color: Colors.white,
+                          decoration: TextDecoration.none,
+                          fontFamily: 'DancingScript-Bold',
+                          fontSize: 20.0,
+                        ),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Text(
+                        "Lucknow",
+                        textAlign: TextAlign.center,
+                        textDirection: TextDirection.ltr,
+                        style: TextStyle(
+                          color: Colors.white,
+                          decoration: TextDecoration.none,
+                          fontFamily: 'DancingScript-Bold',
+                          fontSize: 20.0,
+
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+               //imageassests(),
                 mybutton()
               ],
             )
@@ -85,7 +396,7 @@ class home extends StatelessWidget {
     );
   }
 }
-class imageassests extends StatelessWidget{
+/*class imageassests extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     AssetImage obj = AssetImage('images/cute.jpg');
@@ -96,6 +407,8 @@ class imageassests extends StatelessWidget{
   }
 
   }
+
+ */
 
  class mybutton extends StatelessWidget{
   @override
